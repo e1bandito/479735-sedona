@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<body>
+    <header class="main-header">
+        <div class="logo"><img src="http://placehold.it/138x70" alt="Sedona" width="138" height="70"></div>
+        <nav class="main-header-nav">
+            <ul>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="promo">
+            <h1 class="visualy-hidden">Добро пожаловть в Седону!</h1>
+            <div class="promo-text">
+                <h2>Седона - небольшой городок в Аризоне, <br> заслуживающий большего</h2>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features-promo">
+                <h2 class="features-promo-caption">Настоящий <br> городок</h2>
+                <p class="features-promo-text">- №1 -</p>
+                <p class="features-promo-text">Седона не атракцион для туристов,
+                    <br>там течет своя жизнь</p>
+                <div class="features-photo"> <img src="http://placehold.it/800x257" alt="Настоящий городок"> </div>
+            </div>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <h2>Жилье</h2>
+                    <p class="features-item-text">Рекомендуем пожить в начтоящем
+                        <br>мотеле, все как в кино!</p>
+                </li>
+                <li class="feature-item">
+                    <h2>Еда</h2>
+                    <p class="features-item-text">Всегда заказывайте фирменный бургер,
+                        <br> вы не разочаруетесь!</p>
+                </li>
+                <li class="feature-item">
+                    <h2>Сувениры</h2>
+                    <p class="features-item-text">Не только китайского, но и местного
+                        <br> производства!</p>
+                </li>
+            </ul>
+            <div class="features-promo">
+                <div class="features-photo"> <img src="http://placehold.it/800x257" alt="Настоящий городок"> </div>
+                <h2 class="features-promo-caption">Там есть <br> мост дьявола</h2>
+                <p class="features-promo-text">- №2 -</p>
+                <p class="features-promo-text">Да, по нему можно пройти! Если конечно
+                    <br> вы осмелитесь</p>
+            </div>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <h2>Небольшая <br> площадь</h2>
+                    <p class="features-item-text">- №3 -</p>
+                    <p class="features-item-text">Все достопримечательности
+                        <br> находятся очень близко</p>
+                </li>
+                <li class="feature-item">
+                    <h2>Красивая <br> дорога</h2>
+                    <p class="features-item-text">- №4 -</p>
+                    <p class="features-item-text">Ехать в Седону из Лас-Вегаса совсем
+                        <br> не скучно</p>
+                </li>
+                <li class="feature-item">
+                    <h2>Мало <br> туристов</h2>
+                    <p class="features-item-text">- №5 -</p>
+                    <p class="features-item-text">Большинство едет в Гранд Каньон и
+                        <br> толпится там</p>
+                </li>
+            </ul>
+        </section>
+        <section class="search-hotel"> <b>Заинтересовались?</b>
+            <p class="search-hotel-text">Укажите предполагаемые даты поездки,
+                <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <form class="search-hotel-form" name="search-hotel-form" method="get" action="#">
+                <div class="button">
+                    <input type="submit" value="Поиск гостиниц в Седоне"> </div>
+                <div class="search-hotel-field">
+                    <label>Дата заезда:
+                        <input type="text" name="input-date" placeholder="24 апреля 2017">
+                        <div class="search-hotel-calendar"></div>
+                    </label>
+                </div>
+                <div class="search-hotel-field">
+                    <label>Дата выезда:
+                        <input type="text" name="output-date" placeholder="4 июля 2017">
+                        <div class="search-hotel-calendar"></div>
+                    </label>
+                </div>
+                <div class="search-hotel-field">
+                    <label>Взрослые:
+                        <input type="submit" value="-"> <span class="value-grown">2</span>
+                        <input type="submit" value="+"> </label>
+                </div>
+                <div class="search-hotel-field">
+                    <label>Дети:
+                        <input type="submit" value="-"> <span class="value-child">2</span>
+                        <input type="submit" value="+"> </label>
+                </div>
+            </form>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1502644463336" width="1200" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="main-footer-hashtag">#VISITSEDONA</p>
+        <div class="main-footer-social">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-footer-copyright"><span>WEBSITE BY</span>
+            <a href="#"><img src="http://placehold.it/115x41"></a>
+        </div>
+    </footer>
+</body>
 
-  </body>
 </html>
