@@ -2,42 +2,98 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="logo"><img src="http://placehold.it/138x70" alt="Sedona" width="138" height="70"></div>
-        <nav class="main-header-nav">
-            <ul>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
-    <input type="range" min="0" max="3000">
-    <footer class="main-footer">
-        <p class="main-footer-hashtag">#VISITSEDONA</p>
-        <div class="main-footer-social">
-            <ul>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-            </ul>
-        </div>
-        <div class="main-footer-copyright"><span>WEBSITE BY</span>
-            <a href="#"><img src="http://placehold.it/115x41"></a>
-        </div>
-    </footer>
+	<header class="main-header">
+		<nav class="site-navigation">
+			<a class="main-header-logo" href="index.html"> <img src="http://placehold.it/138x70" alt="Sedona" width="138" height="70"> </a>
+			<ul>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a class="site-navigation-current" href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<h1 class="visually-hidden">Поис гостиницы</h1>
+		<section class="preference">
+			<h2 class="visually-hidden">Фильтр гостниц</h2>
+			<form class="preference-filters" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li>
+							<input class="preference-filter-checkbox" type="checkbox" name="Бассейн" checked>Бассейн</li>
+						<li>
+							<input class="preference-filter-checkbox" type="checkbox" name="Парковка">Парковка</li>
+						<li>
+							<input class="preference-filter-checkbox" type="checkbox" name="WiFi">Wi-Fi</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<input class="preference-filter-checkbox" type="checkbox" name="Гостиница" checked>Гостиница</li>
+						<li>
+							<input class="preference-filter-checkbox" type="checkbox" name="Мотель" checked>Мотель</li>
+						<li>
+							<input class="preference-filter-checkbox" type="checkbox" name="Апартаменты" checked>Апартаменты</li>
+					</ul>
+				</fieldset>
+				<p>Стоимость в сутри (Р):</p> <span class="price-value">от 0</span> <span class="price-value">до 3000</span>
+				<input type="range" min="0" max="3000">
+				<input type="submit" value="Показать"> </form>
+		</section>
+		<section class="results">
+			<h2 class="visually-hidden">Результаты поиска</h2> <b class="results-value">Найдено: 3</b>
+			<ul class="results-sort">
+				<li>Сортировка</li>
+				<li>
+					<button name="price">по цене</button>
+				</li>
+				<li>
+					<button name="type">по типу</button>
+				</li>
+				<li>
+					<button name="rating">по рейтингу</button>
+				</li>
+			</ul>
+			<ul class="results-list">
+				<li> <img src="http://placehold.it/140x90" alt="Amara resort and spa"> <b>Amara resort and spa</b>
+					<p>Гостиница от 4000 Р.</p> <a class="result-list-detail" href="#">Подробнее</a> <a class="result-list-reserved" href="#">Забронировать</a>
+					<p class="result-list-rating">Рейтинг: 8,5</p>
+				</li>
+				<li> <img src="http://placehold.it/140x90" alt="Desert quail inn"> <b>Desert quail inn</b>
+					<p>Мотель от 3000 Р.</p> <a class="result-list-detail" href="#">Подробнее</a> <a class="result-list-reserved" href="#">Забронировать</a>
+					<p class="result-list-rating">Рейтинг: 8,9</p>
+				</li>
+				<li> <img src="http://placehold.it/140x90" alt="Villas at poco diablo"> <b>Villas at poco diablo</b>
+					<p>Аппартаменты от 2000 Р.</p> <a class="result-list-detail" href="#">Подробнее</a> <a class="result-list-reserved" href="#">Забронировать</a>
+					<p class="result-list-rating">Рейтинг: 9,2</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<p class="main-footer-hashtag">#VISITSEDONA</p>
+		<ul class="main-footer-social">
+			<li>
+				<a href="#"></a>
+			</li>
+			<li>
+				<a href="#"></a>
+			</li>
+			<li>
+				<a href="#"></a>
+			</li>
+		</ul> <span class="main-footer-copyright">WEBSITE BY</span>
+		<a href="#"><img src="http://placehold.it/115x41" alt="HTML Academy"></a>
+	</footer>
 </body>
 
 </html>
