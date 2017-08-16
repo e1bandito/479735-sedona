@@ -25,68 +25,76 @@
         <section class="preference">
             <h2 class="visually-hidden">Фильтр гостниц</h2>
             <form class="preference-filters" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
-                    <legend>Инфраструктура:</legend>
+                <div class="preferense-filters-col1">
+                    <h3>Инфраструктура:</h3>
                     <ul>
                         <li><input class="preference-filter-checkbox" type="checkbox" name="Бассейн" checked>Бассейн</li>
                         <li><input class="preference-filter-checkbox" type="checkbox" name="Парковка">Парковка</li>
                         <li> <input class="preference-filter-checkbox" type="checkbox" name="WiFi">Wi-Fi</li>
                     </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Тип жилья:</legend>
+                </div>
+                <div class="preferense-filters-col2">
+                    <h3>Тип жилья:</h3>
                     <ul>
                         <li><input class="preference-filter-checkbox" type="checkbox" name="Гостиница" checked>Гостиница</li>
                         <li><input class="preference-filter-checkbox" type="checkbox" name="Мотель" checked>Мотель</li>
                         <li><input class="preference-filter-checkbox" type="checkbox" name="Апартаменты" checked>Апартаменты</li>
                     </ul>
-                </fieldset>
-                <p>Стоимость в сутри (Р):</p>
+                </div>
+                <p>Стоимость в сутки (Р):</p>
                 <span class="price-value">от 0</span>
                 <span class="price-value">до 3000</span>
                 <input type="range" min="0" max="3000">
-                <input type="submit" value="Показать">
+                <button type="submit">Показать</button>
             </form>
         </section>
         <section class="results">
             <h2 class="visually-hidden">Результаты поиска</h2>
-            <b class="results-value">Найдено: 3</b>
-            <ul class="results-sort">
-                <li>Сортировка</li>
-                <li>
-                    <button name="price">по цене</button>
-                </li>
-                <li>
-                    <button name="type">по типу</button>
-                </li>
-                <li>
-                    <button name="rating">по рейтингу</button>
-                </li>
-            </ul>
+            <div class="results-block">
+                <b class="results-value">Найдено: 3</b>
+                <ul class="results-sort">
+                    <li>Сортировка</li>
+                    <li>
+                        <button name="price">по цене</button>
+                    </li>
+                    <li>
+                        <button name="type">по типу</button>
+                    </li>
+                    <li>
+                        <button name="rating">по рейтингу</button>
+                    </li>
+                </ul>
+            </div>
             <ul class="results-list">
                 <li>
-                    <img src="http://placehold.it/140x90" alt="Amara resort and spa">
-                    <b>Amara resort and spa</b>
-                    <p>Гостиница от 4000 Р.</p>
-                    <a class="result-list-detail" href="#">Подробнее</a>
-                    <a class="result-list-reserved" href="#">Забронировать</a>
-                    <p class="result-list-rating">Рейтинг: 8,5</p>
+                    <section class="result-list-item">
+                        <img src="http://placehold.it/140x90" alt="Amara resort and spa">
+                        <h3>Amara resort and spa</h3>
+                        <p>Гостиница от 4000 Р.</p>
+                        <a class="result-list-detail" href="#">Подробнее</a>
+                        <a class="result-list-reserved" href="#">Забронировать</a>
+                        <p class="result-list-rating">Рейтинг: 8,5</p>
+                    </section>
                 </li>
                 <li>
-                    <img src="http://placehold.it/140x90" alt="Desert quail inn">
-                    <b>Desert quail inn</b>
-                    <p>Мотель от 3000 Р.</p>
-                    <a class="result-list-detail" href="#">Подробнее</a>
-                    <a class="result-list-reserved" href="#">Забронировать</a>
-                    <p class="result-list-rating">Рейтинг: 8,9</p>
+                    <section class="result-list-item">
+                        <img src="http://placehold.it/140x90" alt="Desert quail inn">
+                        <h3>Desert quail inn</h3>
+                        <p>Мотель от 3000 Р.</p>
+                        <a class="result-list-detail" href="#">Подробнее</a>
+                        <a class="result-list-reserved" href="#">Забронировать</a>
+                        <p class="result-list-rating">Рейтинг: 8,9</p>
+                    </section>
                 </li>
                 <li>
-                    <img src="http://placehold.it/140x90" alt="Villas at poco diablo">
-                    <b>Villas at poco diablo</b>
-                    <p>Аппартаменты от 2000 Р.</p>
-                    <a class="result-list-detail" href="#">Подробнее</a>
-                    <a class="result-list-reserved" href="#">Забронировать</a>
-                    <p class="result-list-rating">Рейтинг: 9,2</p>
+                    <section class="result-list-item">
+                        <img src="http://placehold.it/140x90" alt="Villas at poco diablo">
+                        <h3>Villas at poco diablo</h3>
+                        <p>Аппартаменты от 2000 Р.</p>
+                        <a class="result-list-detail" href="#">Подробнее</a>
+                        <a class="result-list-reserved" href="#">Забронировать</a>
+                        <p class="result-list-rating">Рейтинг: 9,2</p>
+                    </section>
                 </li>
             </ul>
         </section>
