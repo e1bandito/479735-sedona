@@ -29,23 +29,24 @@
 				<div class="preferense-filters-col1">
 					<h3>Инфраструктура:</h3>
 					<ul>
-						<li><input class="preference-filter-checkbox" type="checkbox" name="Бассейн" checked>Бассейн</li>
-						<li><input class="preference-filter-checkbox" type="checkbox" name="Парковка">Парковка</li>
-						<li> <input class="preference-filter-checkbox" type="checkbox" name="WiFi">Wi-Fi</li>
+						<li><label><input class="preference-filter-checkbox" type="checkbox" name="Бассейн" checked>Бассейн</label></li>
+						<li><label><input class="preference-filter-checkbox" type="checkbox" name="Парковка">Парковка</label></li>
+						<li><label><input class="preference-filter-checkbox" type="checkbox" name="WiFi">Wi-Fi</label></li>
 					</ul>
 				</div>
 				<div class="preferense-filters-col2">
 					<h3>Тип жилья:</h3>
 					<ul>
-						<li><input class="preference-filter-checkbox" type="checkbox" name="Гостиница" checked>Гостиница</li>
-						<li><input class="preference-filter-checkbox" type="checkbox" name="Мотель" checked>Мотель</li>
-						<li><input class="preference-filter-checkbox" type="checkbox" name="Апартаменты" checked>Апартаменты</li>
+						<li><label><input class="preference-filter-checkbox" type="checkbox" name="Гостиница" checked>Гостиница</label></li>
+						<li><label><input class="preference-filter-checkbox" type="checkbox" name="Мотель" checked>Мотель</label></li>
+						<li><label><input class="preference-filter-checkbox" type="checkbox" name="Апартаменты" checked>Апартаменты</label></li>
 					</ul>
 				</div>
 				<p>Стоимость в сутки (Р):</p>
 				<span class="price-value">от 0</span>
 				<span class="price-value">до 3000</span>
-				<input type="range" min="0" max="3000">
+				<Label class="visually-hidden" for="price-range">Расброс цены</Label>
+				<input type="range" id="price-range" min="0" max="3000">
 				<button type="submit">Показать</button>
 			</form>
 		</section>
