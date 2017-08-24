@@ -37,9 +37,13 @@ a{
     color: #81b3d2;
 }
 
-.site-navigation-list a:focus{
+.site-navigation-list a:active{
     color: #000000;
     opacity: 0.3;
+}
+
+a.site-navigation-current{
+	color: #776357;
 }
 
 .promo-title {
@@ -54,6 +58,13 @@ a{
 .promo p{
     text-align: center;
 }
+
+.preference-filters{
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+}
+
+
 
 .features-title {
 	font-size: 21px;
@@ -183,6 +194,7 @@ input[type="text"].child-number:focus{;
 	border: none;
 	font: inherit;
 	color: #aaaaaa;
+	cursor: pointer;
 }
 
 .button-number:hover{
@@ -236,14 +248,57 @@ input[type="text"].child-number:focus{;
 }
 
 .main-footer-social-item{
+	position: relative;
 	display: block;
 	width: 46px;
 	height: 48px;
 	background-color: #82b4d3;
 	text-indent: -9999px;
-	fill: #ffffff;
 }
 
+.main-footer-social-item:hover{
+	background-color: #669fc1;
+}
+
+.main-footer-social-item:active{
+	background-color: #5497be;
+}
+
+.main-footer-social-item .twitter{
+	position: absolute;
+	top: 16px;
+	left: 15px;
+}
+
+.main-footer-social-item:active path{
+	fill: #88b6d2;
+}
+
+.main-footer-social-item .facebook{
+	position: absolute;
+	top: 13px;
+	left: 17px;
+}
+
+.main-footer-social-item .youtube{
+	position: absolute;
+	top: 16px;
+	left: 14px;
+}
+
+.htmlacademy-logo{
+	display: block;
+	width: 115px;
+	height: 41px;
+}
+
+.htmlacademy-logo:hover path{
+	fill: #82b4d3;
+}
+
+.htmlacademy-logo:active path{
+	fill: #bebcbd;
+}
 
 .visually-hidden {
 	position: absolute;
