@@ -78,40 +78,46 @@
             </section>
             <section class="hotels">
                 <h2 class="hotels-headline">Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <button class="button" type="button">Поиск гостиницы в Седоне</button>
+                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<button class="button" type="button">Поиск гостиницы в Седоне</button>
                 <form class="hotels-search" action="https://echo.htmlacademy.ru" method="post">
-                    <label for="input-date">Дата заезда:</label>
-                    <input id="input-date" type="text" placeholder="24 апреля 2017"> 
-                    <label for="output-date">Дата заезда:</label>
-                    <input id="output-date" type="text" placeholder="4 июля 2017"> 
-                    <label for="adult-value">Взрослые:</label>
-                    <button type="button">-</button>
-                    <input type="text" id="adult-value">
-                    <button type="button">+</button>
-                    <label for="child-value">Дети:</label>
-                    <button type="button">-</button>
-                    <input type="text" id="child-value">
-                    <button type="button">+</button>
+                    <p>
+                    	<label for="input-date">Дата заезда:</label>
+						<input id="input-date" type="text" placeholder=" 24 апреля 2017">
+					</p>
+					<p>
+						<label for="output-date">Дата заезда:</label>
+						<input id="output-date" type="text" placeholder=" 4 июля 2017">
+                    </p>
+                    <p>
+						<label for="adult-value">Взрослые:</label>
+						<button class="button-number" type="button">-</button>
+						<input class="adult-number" type="text" id="adult-value">
+						<button class="button-number" type="button">+</button>
+						<label for="child-value">Дети:</label>
+						<button class="button-number" type="button">-</button>
+						<input class="child-number" type="text" id="child-value">
+						<button class="button-number" type="button">+</button>
+					</p>
                     <button class="hotels-search-button" type="submit">Найти</button>
                 </form>
-                <img src="img/map.jpg" alt="Карта" width="1200" height="475">
+                <img src="img/map.jpg" alt="Карта" width="1200" height="593">
             </section>
         </main>
         <footer class="main-footer">
-            <p class="main-footer-hashtag">#VISITSEDONA</p>
+            <p class="main-footer-hashtag"><a href="#">#VISITSEDONA</a></p>
             <ul class="main-footer-social">
                 <li>
-                    <a href="#">Twitter</a>
+                    <a class="main-footer-social-item" href="#">Twitter</a>
                 </li>
                 <li>
-                    <a href="#">Facebook</a>
+                    <a class="main-footer-social-item" href="#">Facebook</a>
                 </li>
                 <li>
-                    <a href="#">Youtube</a>
+					<a class="main-footer-social-item" href="#">Youtube</a>
                 </li>
             </ul>
-            <span class="main-footer-copyright">WEBSITE BY</span>
+			<span class="main-footer-copyright">website by</span>
             <a href="#"><img src="img/logo_name.svg" alt="HTML Academy" width="115" height="41"></a>
         </footer>
     </div>
