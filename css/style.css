@@ -107,8 +107,8 @@ a{
     font-weight: 700;
     line-height: 26px;
     color: #ffffff;
+	border: none;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .visually-hidden {
