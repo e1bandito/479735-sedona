@@ -229,6 +229,176 @@ input[type="text"].child-number:focus{;
 	color: #88b6d2;
 }
 
+/*
+ * Страница поиска отелей
+ */
+
+.preference-filters{
+	display: flex;
+}
+
+.preference-filters ul{
+	list-style: none;
+}
+
+.preference{
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.preference-filters h3{
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.hotel-price-button{
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: transparent;
+	width: 137px;
+	height: 36px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.hotel-price-button:hover{
+	background-color: #FFFFFF;
+	color: #000000;
+	cursor: pointer;
+}
+
+.results-value{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.results-sort{
+	list-style: none;
+}
+
+.results-sort ul:first-child{
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.results-sort-button{
+	padding: 0;
+	background-color: transparent;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	opacity: 0.3;
+	text-transform: uppercase;
+	border: none;
+	border-bottom: 1px dotted #82b4d3;
+	cursor: pointer;
+}
+
+.results-sort-button-active{
+	color: #82b4d3;
+	opacity: 1;
+	border: none;
+}
+
+.results-sort-button-active:hover{
+	border-bottom: 1px dotted #82b4d3;
+}
+
+.results-sort-button:hover{
+	color: #82b4d3;
+	opacity: 1;
+}
+
+.results-sort-button:active{
+	color: #000000;
+	border: none;
+}
+
+.results-list{
+	list-style: none;
+	padding: 0;
+}
+
+.result-list-item{
+	border-top: 1px solid #e5e5e5;
+}
+
+.result-list-item:last-child{
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.result-list-headline{
+	color: #000000;
+}
+
+.result-list-headline:hover{
+	color: #82b4d3;
+}
+
+.result-list-headline:active{
+	color: #b2b2b2;
+}
+
+.result-list-detail{
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.result-list-detail:hover{
+	background-color: #669ec0;
+}
+
+.result-list-detail:active{
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+.result-list-reserved{
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #766357;
+}
+
+.result-list-reserved:hover{
+	background-color: #604e43;
+}
+
+.result-list-reserved:active{
+	background-color: #503e33;
+	color: #7e7169;
+}
+
+.result-list-rating{
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+	color: #666666;
+	background-color: #f2f2f2;
+}
+
+/*
+ * Конец страницы поиска отелей
+ */
+
 .main-footer-hashtag a{
 	font-size: 21px;
 	line-height: 26px;
