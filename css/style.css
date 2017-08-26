@@ -182,7 +182,6 @@ input[type="text"].child-number:hover {
 
 input[type="text"].adult-number:focus,
 input[type="text"].child-number:focus {
-	;
 	background-color: #ffffff;
 	outline: 2px solid #e5e5e5;
 }
