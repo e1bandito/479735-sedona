@@ -21,8 +21,42 @@ a {
 	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+.site-navigation {
+	position: relative;
+}
+
+.main-header-logo {
+	position: absolute;
+	left: 531px;
+}
+
+.site-navigation-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
 .site-navigation-list li {
 	list-style: none;
+	padding-top: 14px;
+	padding-bottom: 16px;
+	padding-right: 71px;
+}
+
+.site-navigation-list li:last-child {
+	margin-left: auto;
+}
+
+.site-navigation-list li:nth-child(3) {
+	margin-left: 318px;
+}
+
+.site-navigation-list li:nth-child(2) {
+	margin-left: 76px;
+}
+
+.site-navigation-list li:first-child {
+	margin-left: 72px;
 }
 
 .site-navigation-list a {
@@ -53,10 +87,14 @@ a.site-navigation-current {
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
+	padding-top: 33px;
+	padding-left: 6px;
 }
 
 .promo p {
 	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 35px;
 }
 
 .preference-filters {
@@ -64,30 +102,78 @@ a.site-navigation-current {
 	background-repeat: no-repeat;
 }
 
+.features {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .features-title {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: bold;
 	color: #ffffff;
+	text-align: center;
+	padding-top: 28px;
+	margin: 20px 100px;
 }
 
 .features-intro {
+	width: 400px;
 	background-color: #81b3d2;
 	color: #ffffff;
 }
 
-.features-list {
+.features-intro p {
+	text-align: center;
+	margin: 23px 57px;
+	line-height: 21px;
+}
+
+.features-list1,
+.features-list2 {
 	list-style: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
 }
 
-.features-list:last-child {
-	background-color: #efefef;
-}
-
-.features-list h3 {
+.features-list1 .feature-item h3 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
+	width: 200px;
+	text-align: center;
+	margin: 162px 100px 0px 100px;
+}
+
+.features-list1 .feature-item p {
+	display: block;
+	width: 300px;
+	text-align: center;
+	margin: 22px 50px 80px 50px;
+	line-height: 23px;
+}
+
+.features-list1 .feature-item:first-child {
+	background-image: url(../img/icon-1.svg);
+	background-repeat: no-repeat;
+	background-position: 162px 61px;
+}
+
+.features-list1 .feature-item:nth-child(2) {
+	background-image: url(../img/icon-3.svg);
+	background-repeat: no-repeat;
+	background-position: 158px 62px;
+}
+
+.features-list1 .feature-item:last-child {
+	background-image: url(../img/icon-2.svg);
+	background-repeat: no-repeat;
+	background-position: 168px 56px;
+}
+
+.features-list2:last-child {
+	background-color: #efefef;
 }
 
 .hotels {
