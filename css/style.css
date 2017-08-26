@@ -93,7 +93,7 @@ a.site-navigation-current{
 }
 
 .hotels{
-	position: relative;
+    position: relative;
     background-color: #ffffff;
 }
 
@@ -116,6 +116,7 @@ a.site-navigation-current{
     width: 568px;
     height: 86px;
     background-color: #766357;
+    font: inherit;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -210,6 +211,7 @@ input[type="text"].child-number:focus{;
 	width: 458px;
 	height: 58px;
 	background-color: #81b3d2;
+    font: inherit;
 	font-size: 21px;
     font-weight: 700;
     line-height: 26px;
@@ -257,6 +259,7 @@ input[type="text"].child-number:focus{;
 }
 
 .hotel-price-button{
+    font: inherit;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
@@ -307,6 +310,8 @@ input[type="text"].child-number:focus{;
 }
 
 .results-sort-button-active{
+    font-size: 12px;
+	line-height: 18px;
 	color: #82b4d3;
 	opacity: 1;
 	border: none;
@@ -418,12 +423,14 @@ input[type="text"].child-number:focus{;
 }
 
 .main-footer-social-item{
-	position: relative;
+    position: relative;
 	display: block;
 	width: 46px;
 	height: 48px;
 	background-color: #82b4d3;
-	text-indent: -9999px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .main-footer-social-item:hover{
@@ -470,7 +477,7 @@ input[type="text"].child-number:focus{;
 	fill: #bebcbd;
 }
 
-.visually-hidden {
+.visually-hidden{
 	position: absolute;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
