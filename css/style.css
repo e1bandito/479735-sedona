@@ -98,7 +98,7 @@ a.site-navigation-current {
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 52px;
+	padding-top: 51px;
 	padding-left: 6px;
 }
 
@@ -124,8 +124,8 @@ a.site-navigation-current {
 	font-weight: bold;
 	color: #ffffff;
 	text-align: center;
-	padding-top: 25px;
-	margin: 20px 100px;
+	padding-top: 27px;
+	margin: 22px 100px;
 }
 
 .features-intro {
@@ -161,7 +161,7 @@ a.site-navigation-current {
 	display: block;
 	width: 300px;
 	text-align: center;
-	margin: 22px 50px 83px 50px;
+	margin: 22px 50px 81px 50px;
 	line-height: 22px;
 }
 
@@ -184,7 +184,7 @@ a.site-navigation-current {
 }
 
 .features-list2 {
-	height: 256px;
+	height: 257px;
 }
 
 .features-list2:last-child {
@@ -197,7 +197,7 @@ a.site-navigation-current {
 	font-weight: 700;
 	width: 160px;
 	text-align: center;
-	margin: 47px 120px 0px 120px;
+	margin: 49px 120px 0px 120px;
 }
 
 .features-list2 .feature-item p {
@@ -259,7 +259,7 @@ a.site-navigation-current {
 
 .hotels-search {
 	position: absolute;
-	top: 240px;
+	top: 241px;
 	left: 316px;
 	width: 568px;
 	height: 395px;
@@ -609,7 +609,7 @@ input[type="text"].child-number:focus {
 	width: 321px;
 	list-style: none;
 	text-align: center;
-	padding-top: 23px;
+	padding-top: 22px;
 }
 
 .main-footer-social li {
@@ -663,7 +663,6 @@ input[type="text"].child-number:focus {
 	align-items: center;
 	margin: auto;
 	width: 205px;
-	padding-top: 0px;
 	padding-left: 50px;
 }
 
