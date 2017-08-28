@@ -109,8 +109,18 @@ a.site-navigation-current {
 }
 
 .preference-filters {
-	background-image: url(../img/background.jpg);
-	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-start;
+	padding: 31px 72px;
+}
+
+.preference-filters ul {
+	padding: 0;
+	margin: 0;
+}
+
+.preference-filters-col3 {
+	margin-left: auto;
 }
 
 .features {
@@ -253,7 +263,7 @@ a.site-navigation-current {
 }
 
 .button:active {
-	background-color: ##503e33;
+	background-color: #503e33;
 	color: #857871;
 }
 
@@ -401,20 +411,19 @@ input[type="text"].child-number:focus {
 /*
  * Страница поиска отелей
  */
-
-.preference-filters {
-	display: flex;
-}
-
 .preference-filters ul {
 	list-style: none;
 }
 
 .preference {
+	height: 218px;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 	color: #ffffff;
+	background-image: url(../img/background.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .preference-filters h3 {
@@ -450,17 +459,34 @@ input[type="text"].child-number:focus {
 	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	margin-right: 47px;
+}
+
+.results-block {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 30px 72px;
 }
 
 .results-sort {
+	display: flex;
+	align-items: baseline;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.results-sort ul:first-child {
+.results-sort li:first-child {
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
 	text-transform: uppercase;
+	margin-right: 40px;
+}
+
+.results-sort li:not(:first-child) {
+	margin-right: 33px;
 }
 
 .results-sort-button {
@@ -501,9 +527,13 @@ input[type="text"].child-number:focus {
 .results-list {
 	list-style: none;
 	padding: 0;
+	margin: 0;
 }
 
 .result-list-item {
+	display: flex;
+	align-items: top;
+	padding: 29px 72px 30px 72px;
 	border-top: 1px solid #e5e5e5;
 }
 
@@ -511,7 +541,20 @@ input[type="text"].child-number:focus {
 	border-bottom: 1px solid #e5e5e5;
 }
 
+.result-list-item p,
+.result-list-item h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.result-list-item img {
+	margin-right: 30px;
+}
+
 .result-list-headline {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
 	color: #000000;
 }
 
@@ -559,11 +602,14 @@ input[type="text"].child-number:focus {
 	color: #7e7169;
 }
 
-.result-list-rating {
+p.result-list-rating {
+	margin-left: auto;
+	align-self: flex-end;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 	color: #666666;
+	padding: 4px 14px 3px 16px;
 	background-color: #f2f2f2;
 }
 
@@ -663,7 +709,7 @@ input[type="text"].child-number:focus {
 	align-items: center;
 	margin: auto;
 	width: 205px;
-	padding-left: 50px;
+	padding-left: 49px;
 }
 
 .main-footer-copyright-info {
