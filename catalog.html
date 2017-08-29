@@ -65,9 +65,19 @@
 					</div>
 					<div class="preference-filters-col3">
 						<h3>Стоимость в сутки (Р):</h3>
-						<span class="price-value">от 0</span>
-						<span class="price-value">до 3000</span>
-						<input type="range" min="0" max="3000">
+						<div class="price-controls">
+							<label for="min-price-value" class="min-price">от</label>
+							<input type="text" id="min-price-value" value="0">
+							<label for="max-price-value" class="min-price">до</label>
+							<input type="text" id="max-price-value" value="3000">
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
 						<button class="hotel-price-button" type="submit">Показать</button>
 					</div>
 				</form>

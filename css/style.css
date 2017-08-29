@@ -111,7 +111,7 @@ a.site-navigation-current {
 .preference-filters {
 	display: flex;
 	justify-content: flex-start;
-	padding: 31px 72px;
+	padding: 27px 72px;
 }
 
 .preference-filters ul {
@@ -121,6 +121,97 @@ a.site-navigation-current {
 
 .preference-filters-col3 {
 	margin-left: auto;
+	width: 316px;
+}
+
+.preference-filters-col3 h3 {
+	margin: 0;
+	padding-bottom: 9px;
+}
+
+.price-controls {
+	position: relative;
+	height: 33px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background-color: #ffffff;
+	transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 35px;
+	vertical-align: center;
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 20px;
+	padding-left: 64px;
+}
+
+.price-controls input {
+	width: 58px;
+	margin: 0;
+	color: inherit;
+	font: inherit;
+	border: none;
+	outline: none;
+	background: transparent;
+	margin-left: -3px;
+}
+
+.range-controls {
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background-color: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+.range-toggle:hover {
+	background-color: #1c4f80;
 }
 
 .features {
@@ -435,7 +526,7 @@ input[type="text"].child-number:focus {
 }
 
 .hotel-price-button {
-	font: inherit;
+	font-family: inherit;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
@@ -446,6 +537,7 @@ input[type="text"].child-number:focus {
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
+	margin-left: 84px;
 }
 
 .hotel-price-button:hover {
