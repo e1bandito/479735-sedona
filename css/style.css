@@ -621,8 +621,7 @@ input[type="text"].child-number:focus {
 .results-block {
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	padding: 30px 72px;
+	padding: 30px 30px 30px 72px;
 }
 
 .results-sort {
@@ -678,6 +677,31 @@ input[type="text"].child-number:focus {
 .results-sort-button:active {
 	color: #000000;
 	border: none;
+}
+
+.results-sort li:nth-child(5) {
+	padding-top: 1px;
+	margin-left: 470px;
+}
+
+.results-sort li:nth-child(6) {
+	margin-left: -20px;
+}
+
+.results-sort-arrow {
+	fill: #cbcbcb;
+}
+
+.results-sort-arrow-active {
+	fill: #82b4d3;
+}
+
+.results-sort-arrow:hover path {
+	fill: #1e191a;
+}
+
+.results-sort-arrow:active path {
+	fill: #89b8d5;
 }
 
 .results-list {
