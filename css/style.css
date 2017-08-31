@@ -14,6 +14,7 @@ a {
 }
 
 .wrapper {
+	position: relative;
 	width: 1200px;
 	height: auto;
 	margin: 0 auto;
@@ -126,7 +127,7 @@ a.site-navigation-current {
 
 .preference-filters-col3 h3 {
 	margin: 0;
-	padding-bottom: 9px;
+	padding-bottom: 11px;
 }
 
 .price-controls {
@@ -624,17 +625,16 @@ input[type="text"].child-number:focus {
 
 .result-list-item {
 	display: flex;
-	align-items: top;
-	padding: 29px 72px 30px 72px;
+	align-items: flex-start;
+	padding: 29px 71px 30px 72px;
 	border-top: 1px solid #e5e5e5;
 }
 
-.result-list-item:last-child {
+.results-list li:last-child{
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.result-list-item p,
-.result-list-item h3 {
+.result-list-item p {
 	margin: 0;
 	padding: 0;
 }
@@ -643,18 +643,33 @@ input[type="text"].child-number:focus {
 	margin-right: 30px;
 }
 
-.result-list-headline {
+.result-list-item-text {
+	display: flex;
+	flex-wrap: wrap;
+	width: 260px;
+}
+
+.result-list-item-text h3 {
+	padding: 0;
+	padding-bottom: 8px;
+	margin: 0;
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 17px;
 	font-weight: 700;
 	color: #000000;
 }
 
-.result-list-headline:hover {
+.result-list-item-text p {
+	display: block;
+	width: 116px;
+	padding-bottom: 12px;
+}
+
+.result-list-item-text h3:hover {
 	color: #82b4d3;
 }
 
-.result-list-headline:active {
+.result-list-item-text h3:active {
 	color: #b2b2b2;
 }
 
@@ -665,6 +680,8 @@ input[type="text"].child-number:focus {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #81b3d2;
+	padding: 4px 16px 3px 16px;
+	margin-right: 8px;
 }
 
 .result-list-detail:hover {
@@ -683,6 +700,7 @@ input[type="text"].child-number:focus {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #766357;
+	padding: 3px 16px 3px 16px;
 }
 
 .result-list-reserved:hover {
@@ -712,7 +730,7 @@ p.result-list-rating {
 
 .main-footer-index {
 	position: absolute;
-	top: 2643px;
+	bottom: 0;
 	width: 1200px;
 	background-color: #ffffff;
 	opacity: 0.9;
