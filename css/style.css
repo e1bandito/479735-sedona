@@ -373,11 +373,33 @@ a.site-navigation-current {
 }
 
 .hotels-search p {
+	position: relative;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
 	padding: 0;
 	margin: 0;
+}
+
+.calendar-button {
+	position: absolute;
+	top: 6px;
+	right: 3px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.calendar path {
+	fill: #cbcbcb;
+}
+
+.calendar:hover path {
+	fill: #000000;
+}
+
+.calendar:active path {
+	fill: #82b4d3;
 }
 
 .hotels-search p:first-child {
