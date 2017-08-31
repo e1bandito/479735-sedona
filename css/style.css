@@ -525,13 +525,14 @@ input[type="text"].hotels-search-out {
 	        box-sizing: border-box;
 	padding-left: 13px;
 	padding-right: 40px;
+	margin-left: auto;
 }
 
 .hotels-search input[type="text"] {
 	width: 346px;
 	height: 36px;
 	background-color: #f3f3f3;
-	font-family: inherit;
+	font: inherit;
 	text-transform: uppercase;
 	border: none;
 }
