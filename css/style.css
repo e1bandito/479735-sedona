@@ -112,7 +112,7 @@ a.site-navigation-current {
 .preference-filters {
 	display: flex;
 	justify-content: flex-start;
-	padding: 27px 72px;
+	padding: 27px 73px;
 }
 
 .preference-filters ul {
@@ -122,17 +122,17 @@ a.site-navigation-current {
 
 .preference-filters-col3 {
 	margin-left: auto;
-	width: 316px;
+	width: 317px;
 }
 
 .preference-filters-col3 h3 {
 	margin: 0;
-	padding-bottom: 11px;
+	padding-bottom: 10px;
 }
 
 .price-controls {
 	position: relative;
-	height: 33px;
+	height: 32px;
 	margin-bottom: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -160,7 +160,7 @@ a.site-navigation-current {
 
 .price-controls .min-price,
 .price-controls .max-price {
-	width: 20px;
+	width: 21px;
 	padding-left: 64px;
 }
 
@@ -226,7 +226,7 @@ a.site-navigation-current {
 	font-weight: bold;
 	color: #ffffff;
 	text-align: center;
-	padding-top: 27px;
+	padding-top: 25px;
 	margin: 22px 100px;
 }
 
@@ -403,6 +403,12 @@ a.site-navigation-current {
 
 .button-child-minus {
 	margin-left: 29px;
+	background-image: url(../img/minus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: 150%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .child-label {
@@ -411,6 +417,50 @@ a.site-navigation-current {
 
 .button-adult-minus {
 	margin-left: 43px;
+	background-image: url(../img/minus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: 150%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.button-adult-minus:hover,
+.button-child-minus:hover {
+	background-image: url(../img/minus-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.button-adult-minus:active,
+.button-child-minus:active {
+	background-image: url(../img/minus-active.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.button-adult-plus,
+.button-child-plus {
+	background-image: url(../img/plus.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: 150%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.button-adult-plus:hover,
+.button-child-plus:hover {
+	background-image: url(../img/plus-hover.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.button-adult-plus:active,
+.button-child-plus:active {
+	background-image: url(../img/plus-active.png);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 input[type="text"].hotels-search-in,
@@ -461,17 +511,8 @@ input[type="text"].child-number:focus {
 	height: 38px;
 	background-color: #f3f3f3;
 	border: none;
-	font: inherit;
 	color: #aaaaaa;
 	cursor: pointer;
-}
-
-.button-number:hover {
-	color: #000000;
-}
-
-.button-number:active {
-	color: #82b4d3;
 }
 
 .hotels-search-button {
@@ -538,7 +579,7 @@ input[type="text"].child-number:focus {
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
-	margin-left: 84px;
+	margin-left: 85px;
 }
 
 .hotel-price-button:hover {
@@ -680,8 +721,8 @@ input[type="text"].child-number:focus {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #81b3d2;
-	padding: 4px 16px 3px 16px;
-	margin-right: 8px;
+	padding: 3px 16px 4px 17px;
+	margin-right: 7px;
 }
 
 .result-list-detail:hover {
@@ -700,7 +741,7 @@ input[type="text"].child-number:focus {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #766357;
-	padding: 3px 16px 3px 16px;
+	padding: 4px 16px 3px 17px;
 }
 
 .result-list-reserved:hover {
@@ -713,6 +754,7 @@ input[type="text"].child-number:focus {
 }
 
 p.result-list-rating {
+	position: relative;
 	margin-left: auto;
 	align-self: flex-end;
 	font-size: 14px;
@@ -723,6 +765,16 @@ p.result-list-rating {
 	background-color: #f2f2f2;
 }
 
+.result-list-rating::before {
+	content: " ";
+	position: absolute;
+	top: -62px;
+	right: 0px;
+	width: 88px;
+	height: 18px;
+	background-image: url(../img/star-rating.svg);
+	background-repeat: space;
+}
 
 /*
  * Конец страницы поиска отелей
@@ -730,7 +782,7 @@ p.result-list-rating {
 
 .main-footer-index {
 	position: absolute;
-	bottom: 0;
+	bottom: 8px;
 	width: 1200px;
 	background-color: #ffffff;
 	opacity: 0.9;
