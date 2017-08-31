@@ -765,12 +765,34 @@ p.result-list-rating {
 	background-color: #f2f2f2;
 }
 
-.result-list-rating::before {
+.four-star::before {
 	content: " ";
 	position: absolute;
 	top: -62px;
 	right: 0px;
 	width: 88px;
+	height: 18px;
+	background-image: url(../img/star-rating.svg);
+	background-repeat: space;
+}
+
+.three-star::before {
+	content: " ";
+	position: absolute;
+	top: -62px;
+	right: 0px;
+	width: 66px;
+	height: 18px;
+	background-image: url(../img/star-rating.svg);
+	background-repeat: space;
+}
+
+.two-star::before {
+	content: " ";
+	position: absolute;
+	top: -62px;
+	right: 0px;
+	width: 42px;
 	height: 18px;
 	background-image: url(../img/star-rating.svg);
 	background-repeat: space;
