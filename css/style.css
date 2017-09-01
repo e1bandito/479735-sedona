@@ -119,13 +119,69 @@ a.site-navigation-current {
 	-webkit-box-pack: start;
 	    -ms-flex-pack: start;
 	        justify-content: flex-start;
-	padding: 27px 73px;
+	padding: 27px 72px 30px 72px;
 }
 
 .preference-filters ul {
 	padding: 0;
 	margin: 0;
 }
+
+/*
+ * Стили для чекбоксов - начало.
+ */
+
+.preferense-filters-col1 h3,
+.preferense-filters-col2 h3 {
+	margin: 0;
+	padding-bottom: 26px;
+}
+
+
+
+.preferense-filters-col2 {
+	padding-left: 120px;
+}
+
+.preferense-list li{
+	margin-left:  40px;
+	padding-bottom: 25px;
+}
+
+.preferense-list li:last-child {
+	padding-bottom: 0;
+}
+
+.preferense-list-label {
+	position: relative;
+}
+
+.preferense-list-label input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	top: -7px;
+	left: -43px;
+
+	width: 30px;
+	height: 30px;
+
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.preferense-list-label input[type="checkbox"]:checked+.checkbox-indicator {
+	position: absolute;
+	top: -7px;
+	left: -41px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+}
+
+/*
+ * Стили для чекбоксов - конец.
+ */
 
 .preference-filters-col3 {
 	margin-left: auto;
@@ -458,7 +514,6 @@ a.site-navigation-current {
 }
 
 .button-child-minus {
-	margin-left: 29px;
 	background-image: url(../img/minus.png);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -468,38 +523,43 @@ a.site-navigation-current {
 }
 
 .child-label {
-	margin-left: 53px;
+	margin-left: 54px;
 }
 
-.button-adult-minus {
-	margin-left: 43px;
-	background-image: url(../img/minus.png);
+.button-adult-minus,
+.button-child-minus {
+	margin-left: 41px;
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -7px -28px;
 	text-indent: 150%;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
+.button-child-minus {
+	margin-left: 31px;
+}
+
 .button-adult-minus:hover,
 .button-child-minus:hover {
-	background-image: url(../img/minus-hover.png);
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -7px -5px;
 }
 
 .button-adult-minus:active,
 .button-child-minus:active {
-	background-image: url(../img/minus-active.png);
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -7px 18px;
 }
 
 .button-adult-plus,
 .button-child-plus {
-	background-image: url(../img/plus.png);
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -8px -117px;
 	text-indent: 150%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -507,16 +567,16 @@ a.site-navigation-current {
 
 .button-adult-plus:hover,
 .button-child-plus:hover {
-	background-image: url(../img/plus-hover.png);
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -8px -86px;
 }
 
 .button-adult-plus:active,
 .button-child-plus:active {
-	background-image: url(../img/plus-active.png);
+	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -8px -55px;
 }
 
 input[type="text"].hotels-search-in,
@@ -607,7 +667,6 @@ input[type="text"].child-number:focus {
 }
 
 .preference {
-	height: 218px;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
