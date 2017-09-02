@@ -179,6 +179,10 @@ a.site-navigation-current {
 	background-repeat: no-repeat;
 }
 
+.preferense-list-label input[type="checkbox"]:disabled+.checkbox-indicator {
+	opacity: 0.3;
+}
+
 /*
  * Стили для чекбоксов - конец.
  */
