@@ -158,11 +158,11 @@ a.site-navigation-current {
 
 .preferense-list-label input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
-	top: -7px;
+	top: -8px;
 	left: -43px;
 
 	width: 30px;
-	height: 30px;
+	height: 36px;
 
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
@@ -171,10 +171,10 @@ a.site-navigation-current {
 
 .preferense-list-label input[type="checkbox"]:checked+.checkbox-indicator {
 	position: absolute;
-	top: -7px;
+	top: -8px;
 	left: -41px;
 	width: 30px;
-	height: 30px;
+	height: 36px;
 	background-image: url(../img/checkbox-on.svg);
 	background-repeat: no-repeat;
 }
