@@ -338,7 +338,7 @@ a.site-navigation-current {
 	display: block;
 	width: 300px;
 	text-align: center;
-	margin: 22px 50px 81px 50px;
+	padding: 10px 50px 67px 50px;
 	line-height: 22px;
 }
 
@@ -360,10 +360,6 @@ a.site-navigation-current {
 	background-position: 168px 56px;
 }
 
-.features-list2 {
-	height: 257px;
-}
-
 .features-list2:last-child {
 	background-color: #efefef;
 }
@@ -374,7 +370,7 @@ a.site-navigation-current {
 	font-weight: 700;
 	width: 160px;
 	text-align: center;
-	margin: 49px 120px 0px 120px;
+	padding: 25px 120px 0px 120px;
 }
 
 .features-list2 .feature-item p {
@@ -382,7 +378,11 @@ a.site-navigation-current {
 	width: 280px;
 	text-align: center;
 	line-height: 22px;
-	margin: 22px 60px -2px 60px;
+	padding: 2px 60px 4px 60px;
+}
+
+.features-list2 {
+	padding-bottom: 41px;
 }
 
 .hotels {
