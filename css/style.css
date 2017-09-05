@@ -112,6 +112,11 @@ a.site-navigation-current {
 	padding-bottom: 37px;
 }
 
+.sedona-img {
+	display: block;
+	background-color: #82b4d3;
+}
+
 .preference-filters {
 	display: -webkit-box;
 	display: -ms-flexbox;
