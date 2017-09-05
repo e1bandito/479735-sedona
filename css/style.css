@@ -797,7 +797,9 @@ input[type="text"].child-number:focus {
 }
 
 .results-sort-arrow {
-	fill: #cbcbcb;
+	display: block;
+	width: 13px;
+	height: 15px;
 }
 
 .results-sort-arrow-active {
@@ -810,6 +812,10 @@ input[type="text"].child-number:focus {
 
 .results-sort-arrow:active path {
 	fill: #89b8d5;
+}
+
+.results-sort-arrow svg {
+	pointer-events: none;
 }
 
 .results-list {
@@ -1064,6 +1070,10 @@ p.result-list-rating {
 	fill: #88b6d2;
 }
 
+.main-footer-social-item svg {
+	pointer-events: none;
+}
+
 .main-footer-social-item .facebook {
 	position: absolute;
 	top: 13px;
@@ -1104,6 +1114,10 @@ p.result-list-rating {
 
 .htmlacademy-logo:active path {
 	fill: #bebcbd;
+}
+
+.htmlacademy-logo svg {
+	pointer-events: none;
 }
 
 .visually-hidden {

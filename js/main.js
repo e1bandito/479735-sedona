@@ -33,7 +33,7 @@ adultMinus.addEventListener("click", function (evt) {
 	adultChange -= 1;
 	if (adultChange <= 1) {
 	adultChange = 0;
-};
+	};
 	adult.value = adultChange;
 });
 
@@ -48,6 +48,6 @@ childMinus.addEventListener("click", function (evt) {
 	childChange -= 1;
 	if (childChange <= 1) {
 	childChange = 0;
-};
+    }
 	child.value = childChange;
 });
