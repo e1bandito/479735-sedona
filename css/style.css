@@ -447,6 +447,7 @@ a.site-navigation-current {
 	padding: 56px 55px 55px 56px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+	animation: bounce 0.5s;
 }
 
 .hotels-search p {
@@ -818,6 +819,7 @@ input[type="text"].child-number:focus {
 }
 
 .result-list-item {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -914,7 +916,6 @@ input[type="text"].child-number:focus {
 }
 
 p.result-list-rating {
-	position: relative;
 	margin-left: auto;
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
@@ -929,8 +930,8 @@ p.result-list-rating {
 .four-star::before {
 	content: " ";
 	position: absolute;
-	top: -62px;
-	right: 0px;
+	top: 28px;
+	right: 73px;
 	width: 88px;
 	height: 18px;
 	background-image: url(../img/star-rating.svg);
@@ -940,8 +941,8 @@ p.result-list-rating {
 .three-star::before {
 	content: " ";
 	position: absolute;
-	top: -62px;
-	right: 0px;
+	top: 28px;
+	right: 73px;
 	width: 66px;
 	height: 18px;
 	background-image: url(../img/star-rating.svg);
@@ -951,8 +952,8 @@ p.result-list-rating {
 .two-star::before {
 	content: " ";
 	position: absolute;
-	top: -62px;
-	right: 0px;
+	top: 28px;
+	right: 73px;
 	width: 42px;
 	height: 18px;
 	background-image: url(../img/star-rating.svg);
@@ -962,6 +963,30 @@ p.result-list-rating {
 /*
  * Конец страницы поиска отелей
  */
+
+@keyframes bounce {
+	0% {
+    	transform: translateY(1000px);
+  }
+
+	70% {
+		transform: translateY(-30px);
+	}
+	
+	100% {
+    	transform: translateY(0);
+  }
+}
+
+.hotels-search-toggle {
+	display: none;
+}
+
+.map {
+	background-image: url(../img/map.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
 
 .main-footer-index {
 	position: absolute;
