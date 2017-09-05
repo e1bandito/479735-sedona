@@ -5,13 +5,10 @@ var adult = document.querySelector("[name=adult]");
 var adultValue = +adult.value;
 var adultPlus = document.querySelector(".button-adult-plus");
 var adultMinus = document.querySelector(".button-adult-minus");
-var adultChange = +adult.value;
-
 var child = document.querySelector("[name=child]");
 var childValue = +child.value;
 var childPlus = document.querySelector(".button-child-plus");
 var childMinus = document.querySelector(".button-child-minus");
-var childChange = +child.value;
 
 if ("hotelsSearchToggle") {
 	hotelSearch.classList.add("hotels-search-toggle");
@@ -24,30 +21,30 @@ link.addEventListener("click", function (evt) {
 
 adultPlus.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	adultChange += 1;
-	adult.value = adultChange;
+	adultValue += 1;
+	adult.value = adultValue;
 });
 
 adultMinus.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	adultChange -= 1;
-	if (adultChange <= 1) {
-	adultChange = 0;
+	adultValue -= 1;
+	if (adultValue <= 0) {
+	adultValue = 0;
 	};
-	adult.value = adultChange;
+	adult.value = adultValue;
 });
 
 childPlus.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	childChange += 1;
-	child.value = childChange;
+	childValue += 1;
+	child.value = childValue;
 });
 
 childMinus.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	childChange -= 1;
-	if (childChange <= 1) {
-	childChange = 0;
+	childValue -= 1;
+	if (childValue <= 0) {
+	childValue = 0;
     }
-	child.value = childChange;
+	child.value = childValue;
 });
