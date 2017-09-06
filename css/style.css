@@ -37,7 +37,8 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 }
@@ -146,7 +147,7 @@ a.site-navigation-current {
 
 
 .preferense-filters-col2 {
-	padding-left: 120px;
+	padding-left: 115px;
 }
 
 .preferense-list li{
@@ -456,7 +457,8 @@ a.site-navigation-current {
 	padding: 56px 55px 55px 56px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	animation: bounce 0.5s;
+	-webkit-animation: bounce 0.5s;
+	        animation: bounce 0.5s;
 }
 
 .hotels-search p {
@@ -977,17 +979,37 @@ p.result-list-rating {
  * Конец страницы поиска отелей
  */
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
 	0% {
-    	transform: translateY(1000px);
+    	-webkit-transform: translateY(1000px);
+    	        transform: translateY(1000px);
   }
 
 	70% {
-		transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
 	}
 	
 	100% {
-    	transform: translateY(0);
+    	-webkit-transform: translateY(0);
+    	        transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+	0% {
+    	-webkit-transform: translateY(1000px);
+    	        transform: translateY(1000px);
+  }
+
+	70% {
+		-webkit-transform: translateY(-30px);
+		        transform: translateY(-30px);
+	}
+	
+	100% {
+    	-webkit-transform: translateY(0);
+    	        transform: translateY(0);
   }
 }
 
@@ -1004,7 +1026,6 @@ p.result-list-rating {
 .main-footer-index {
 	position: absolute;
 	bottom: 7px;
-	width: 1200px;
 	background-color: #ffffff;
 	opacity: 0.9;
 }
@@ -1013,13 +1034,14 @@ p.result-list-rating {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	padding-left: 6%;
+	padding-right: 6%;
 }
 
 .main-footer-hashtag {
-	width: 400px;
+	width: 136px;
 	text-align: center;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding: 32px 60px;
 }
 
 .main-footer-hashtag a {
@@ -1037,10 +1059,10 @@ p.result-list-rating {
 }
 
 .main-footer-social {
-	width: 321px;
+	width: 153px;
 	list-style: none;
 	text-align: center;
-	padding-top: 22px;
+	padding: 22px 196px;
 }
 
 .main-footer-social li {
@@ -1101,9 +1123,8 @@ p.result-list-rating {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	margin: auto;
-	width: 205px;
-	padding-left: 49px;
+	width: 197px;
+	padding: 29px ;
 }
 
 .main-footer-copyright-info {
