@@ -96,7 +96,7 @@
 							<div class="range-toggle range-toggle-min"></div>
 							<div class="range-toggle range-toggle-max"></div>
 						</div>
-						<button class="hotel-price-button" type="submit">Показать</button>
+						<a href="https://htmlacademy.ru" class="hotel-price-button">Показать</a>
 					</div>
 				</form>
 			</section>
@@ -206,7 +206,15 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/main.js"></script>
+	<script>
+		var submitForm = document.querySelector(".hotel-price-button");
+		var form = document.querySelector(".preferense-filters");
+		
+		submitForm.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		form.submit();
+		});
+	</script>
 </body>
 
 </html>

@@ -2,11 +2,11 @@ var link = document.querySelector(".search-form-button");
 var hotelSearch = document.querySelector(".hotels-search");
 var hotelsSearchToggle = document.querySelector("hotels-search-toggle");
 var adult = document.querySelector("[name=adult]");
-var adultValue = +adult.value;
+var adultValue = 2;
 var adultPlus = document.querySelector(".button-adult-plus");
 var adultMinus = document.querySelector(".button-adult-minus");
 var child = document.querySelector("[name=child]");
-var childValue = +child.value;
+var childValue = 0;
 var childPlus = document.querySelector(".button-child-plus");
 var childMinus = document.querySelector(".button-child-minus");
 
