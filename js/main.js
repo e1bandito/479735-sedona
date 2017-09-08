@@ -1,17 +1,15 @@
 // Появление и скрытие формы - начало.
 var link = document.querySelector(".search-form-button");
 var hotelSearch = document.querySelector(".hotels-search");
-var hotelsSearchToggle = document.querySelector("hotels-search-toggle");
 
-if ("hotelsSearchToggle") {
+if (hotelSearch) {
 	hotelSearch.classList.add("hotels-search-toggle");
-};
-
-link.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	hotelSearch.classList.toggle("hotels-search-toggle");
-	hotelSearch.classList.remove("form-error");
+	link.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		hotelSearch.classList.toggle("hotels-search-toggle");
+		hotelSearch.classList.remove("form-error");
 });
+}
 // Появление и скрытие формы - конец.
 
 //Валидация формы - начало.
@@ -41,20 +39,24 @@ var adultValue = 2;
 var adultPlus = document.querySelector(".button-adult-plus");
 var adultMinus = document.querySelector(".button-adult-minus");
 
-adultPlus.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	adultValue += 1;
-	adult.value = adultValue;
-});
+if (adultPlus) {
+	adultPlus.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		adultValue += 1;
+		adult.value = adultValue;
+	});
+}
 
-adultMinus.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	adultValue -= 1;
-	if (adultValue <= 0) {
-	adultValue = 0;
-	};
-	adult.value = adultValue;
-});
+if (adultMinus) {
+	adultMinus.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		adultValue -= 1;
+		if (adultValue <= 0) {
+		adultValue = 0;
+		};
+		adult.value = adultValue;
+	});
+}
 // Плюс и минус взрослые - конец.
 
 // Плюс и минус дети - начало.
@@ -63,20 +65,34 @@ var childValue = 0;
 var childPlus = document.querySelector(".button-child-plus");
 var childMinus = document.querySelector(".button-child-minus");
 
+if (childPlus) {
+	childPlus.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		childValue += 1;
+		child.value = childValue;
+	});
+}
 
-childPlus.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	childValue += 1;
-	child.value = childValue;
-});
-
-childMinus.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	childValue -= 1;
-	if (childValue <= 0) {
-	childValue = 0;
-    }
-	child.value = childValue;
-});
-
+if (childMinus) {
+	childMinus.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		childValue -= 1;
+		if (childValue <= 0) {
+		childValue = 0;
+    	}
+		child.value = childValue;
+	});
+}
 // Плюс и минус дети - конец.
+
+// Отправка формы на странице каталога - начало.
+	var preferenseSubmit = document.querySelector(".hotel-price-button");
+	var preferenseForm = document.querySelector(".preferense-filters");
+	
+if (preferenseSubmit) {
+	preferenseSubmit.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	preferenseForm.submit();
+	});
+}
+// Отправка формы на странице каталога - конец.
