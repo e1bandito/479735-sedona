@@ -164,7 +164,7 @@ a.site-navigation-current {
 
 .preferense-list-label input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
-	top: -8px;
+	top: -9px;
 	left: -43px;
 	width: 30px;
 	height: 36px;
@@ -175,7 +175,7 @@ a.site-navigation-current {
 
 .preferense-list-label input[type="checkbox"]:checked+.checkbox-indicator {
 	position: absolute;
-	top: -8px;
+	top: -9px;
 	left: -41px;
 	width: 30px;
 	height: 36px;
