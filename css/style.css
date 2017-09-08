@@ -144,8 +144,6 @@ a.site-navigation-current {
 	padding-bottom: 26px;
 }
 
-
-
 .preferense-filters-col2 {
 	padding-left: 115px;
 }
@@ -161,6 +159,7 @@ a.site-navigation-current {
 
 .preferense-list-label {
 	position: relative;
+	cursor: pointer;
 }
 
 .preferense-list-label input[type="checkbox"] + .checkbox-indicator {
@@ -191,6 +190,10 @@ a.site-navigation-current {
 .preferense-list-label input[type="checkbox"]:focus+.checkbox-indicator {
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.checkbox-indicator {
+	cursor: pointer;
 }
 
 /*
@@ -466,7 +469,7 @@ a.site-navigation-current {
 	-webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 	        box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 	border-top: 1px solid transparent;
-	padding: 56px 55px 55px 56px;
+	padding: 55px 55px 55px 55px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	-webkit-animation: bounce 0.5s;
@@ -557,7 +560,7 @@ a.site-navigation-current {
 
 .calendar-button {
 	position: absolute;
-	top: 6px;
+	top: 8px;
 	right: 9px;
 	background-color: transparent;
 	border: none;
@@ -610,6 +613,7 @@ a.site-navigation-current {
 	-webkit-box-align: baseline;
 	    -ms-flex-align: baseline;
 	        align-items: baseline;
+	justify-content: flex-start;
 	margin: auto;
 	margin-bottom: 54px;
 }
@@ -624,12 +628,12 @@ a.site-navigation-current {
 }
 
 .child-label {
-	margin-left: 54px;
+	margin-left: 53px;
 }
 
 .button-adult-minus,
 .button-child-minus {
-	margin-left: 41px;
+	margin-left: 40px;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
 	background-position: -7px -28px;
@@ -639,7 +643,7 @@ a.site-navigation-current {
 }
 
 .button-child-minus {
-	margin-left: 31px;
+	margin-left: 27px;
 }
 
 .button-adult-minus:hover,
@@ -660,7 +664,7 @@ a.site-navigation-current {
 .button-child-plus {
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: -8px -117px;
+	background-position: -7px -117px;
 	text-indent: 150%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -670,14 +674,14 @@ a.site-navigation-current {
 .button-child-plus:hover {
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: -8px -86px;
+	background-position: -7px -86px;
 }
 
 .button-adult-plus:active,
 .button-child-plus:active {
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-position: -8px -55px;
+	background-position: -7px -55px;
 }
 
 input[type="text"].hotels-search-in,
@@ -709,20 +713,24 @@ input[type="text"].hotels-search-out {
 
 input[type="text"].adult-number,
 input[type="text"].child-number {
-	width: 36px;
-	height: 36px;
+	width: 34px;
+	height: 34px;
 	text-align: center;
+	border: 2px solid transparent;
+	padding: 0;
 }
 
 input[type="text"].adult-number:hover,
 input[type="text"].child-number:hover {
 	background-color: #ececec;
+	border-color: #ececec;
 }
 
 input[type="text"].adult-number:focus,
 input[type="text"].child-number:focus {
 	background-color: #ffffff;
-	outline: 2px solid #e5e5e5;
+	border-color:  #e5e5e5;
+	outline: none;
 }
 
 .button-number {
@@ -732,6 +740,8 @@ input[type="text"].child-number:focus {
 	border: none;
 	color: #aaaaaa;
 	cursor: pointer;
+	padding: 0;
+	padding-top: 1px;
 }
 
 .hotels-search-button {
