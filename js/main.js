@@ -21,16 +21,16 @@ var dateOut = document.querySelector("[name=date-out]");
 
 searchForm.addEventListener("submit", function (evt) {
 	if (!dateIn.value || !dateOut.value) {
-    evt.preventDefault();
-	hotelSearch.classList.remove("form-error");
-    hotelSearch.offsetWidth = hotelSearch.offsetWidth;
-	hotelSearch.classList.add("form-error");
-	dateIn.focus();
-		if (dateIn.value) {
-			dateOut.focus();
-		}
+		evt.preventDefault();
+		hotelSearch.classList.remove("form-error");
+		hotelSearch.offsetWidth =hotelSearch.offsetWidth;
+		hotelSearch.classList.add("form-error");
+		dateIn.focus();
+			if (dateIn.value) {
+				dateOut.focus();
+			}
 	}
-  });
+});
 //Валидация формы - конец.
 
 // Плюс и минус взрослые - начало.
@@ -47,7 +47,7 @@ if (adultPlus) {
 	});
 }
 
-if (adultMinus) {
+if (adultMinus && adultValue) {
 	adultMinus.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		adultValue -= 1;
@@ -61,11 +61,11 @@ if (adultMinus) {
 
 // Плюс и минус дети - начало.
 var child = document.querySelector("[name=child]");
-var childValue = 0;
+var childValue = +child.value;
 var childPlus = document.querySelector(".button-child-plus");
 var childMinus = document.querySelector(".button-child-minus");
 
-if (childPlus) {
+if (childPlus && childValue) {
 	childPlus.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		childValue += 1;
@@ -78,8 +78,8 @@ if (childMinus) {
 		evt.preventDefault();
 		childValue -= 1;
 		if (childValue <= 0) {
-		childValue = 0;
-    	}
+			childValue = 0;
+		}
 		child.value = childValue;
 	});
 }
@@ -91,8 +91,8 @@ if (childMinus) {
 	
 if (preferenseSubmit) {
 	preferenseSubmit.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	preferenseForm.submit();
+		evt.preventDefault();
+		preferenseForm.submit();
 	});
 }
 // Отправка формы на странице каталога - конец.
