@@ -47,7 +47,7 @@ if (adultPlus) {
 	});
 }
 
-if (adultMinus && adultValue) {
+if (adultMinus) {
 	adultMinus.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		adultValue -= 1;
@@ -61,11 +61,11 @@ if (adultMinus && adultValue) {
 
 // Плюс и минус дети - начало.
 var child = document.querySelector("[name=child]");
-var childValue = +child.value;
+var childValue = 0;
 var childPlus = document.querySelector(".button-child-plus");
 var childMinus = document.querySelector(".button-child-minus");
 
-if (childPlus && childValue) {
+if (childPlus) {
 	childPlus.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		childValue += 1;
