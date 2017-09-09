@@ -8,7 +8,7 @@ if (hotelSearch) {
 		evt.preventDefault();
 		hotelSearch.classList.toggle("hotels-search-toggle");
 		hotelSearch.classList.remove("form-error");
-});
+	});
 }
 // Появление и скрытие формы - конец.
 
@@ -94,8 +94,8 @@ if (childMinus) {
 // Плюс и минус дети - конец.
 
 // Отправка формы на странице каталога - начало.
-	var preferenseSubmit = document.querySelector(".hotel-price-button");
-	var preferenseForm = document.querySelector(".preferense-filters");
+var preferenseSubmit = document.querySelector(".hotel-price-button");
+var preferenseForm = document.querySelector(".preferense-filters");
 	
 if (preferenseSubmit) {
 	preferenseSubmit.addEventListener("click", function (evt) {
