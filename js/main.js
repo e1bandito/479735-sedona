@@ -35,9 +35,13 @@ searchForm.addEventListener("submit", function (evt) {
 
 // Плюс и минус взрослые - начало.
 var adult = document.querySelector("[name=adult]");
-var adultValue = 2;
+var adultValue;
 var adultPlus = document.querySelector(".button-adult-plus");
 var adultMinus = document.querySelector(".button-adult-minus");
+
+if (hotelSearch) {
+	adultValue = +adult.value;
+}
 
 if (adultPlus) {
 	adultPlus.addEventListener("click", function (evt) {
@@ -61,9 +65,13 @@ if (adultMinus) {
 
 // Плюс и минус дети - начало.
 var child = document.querySelector("[name=child]");
-var childValue = 0;
+var childValue;
 var childPlus = document.querySelector(".button-child-plus");
 var childMinus = document.querySelector(".button-child-minus");
+
+if (hotelSearch) {
+	childValue = +child.value;
+}
 
 if (childPlus) {
 	childPlus.addEventListener("click", function (evt) {
