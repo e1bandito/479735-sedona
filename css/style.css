@@ -295,7 +295,7 @@ a.site-navigation-current {
 }
 
 .range-toggle:hover {
-	background-color: #1c4f80;
+	transform: scale(1.1);
 }
 
 .features {

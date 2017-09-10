@@ -91,12 +91,3 @@ if (childMinus) {
 	});
 }
 // Плюс и минус дети - конец.
-
-// Отправка формы на странице каталога - начало.
-var preferenseSubmit = document.querySelector(".search-form-button");
-var preferenseForm = document.querySelector(".hotels-search-button");
-
-preferenseSubmit.addEventListener("click", function (evt) {
-	evt.preventDefault();
-});
-// Отправка формы на странице каталога - конец.
