@@ -436,16 +436,18 @@ a.site-navigation-current {
 	position: relative;
 	display: block;
 	width: 568px;
-	height: 86px;
+	height: 55px;
 	background-color: #766357;
 	font: inherit;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
+	text-align: center;
 	color: #ffffff;
 	border: none;
 	text-transform: uppercase;
 	margin: 0 auto;
+	padding-top: 31px;
 	cursor: pointer;
 	z-index: 10;
 }
@@ -792,21 +794,18 @@ input[type="text"].child-number:focus {
 }
 
 .hotel-price-button {
-	display: block;
 	font-family: inherit;
 	font-size: 14px;
 	line-height: 21px;
 	text-transform: uppercase;
 	color: #ffffff;
 	background: transparent;
-	width: 134px;
-	height: 26px;
+	width: 137px;
+	height: 36px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	cursor: pointer;
-	padding-top: 7px;
 	margin-left: 85px;
-	text-align: center;
 }
 
 .hotel-price-button:hover {

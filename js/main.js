@@ -2,14 +2,13 @@
 var link = document.querySelector(".search-form-button");
 var hotelSearch = document.querySelector(".hotels-search");
 
-if (hotelSearch) {
-	hotelSearch.classList.add("hotels-search-toggle");
-	link.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		hotelSearch.classList.toggle("hotels-search-toggle");
-		hotelSearch.classList.remove("form-error");
-	});
-}
+hotelSearch.classList.add("hotels-search-toggle");
+
+link.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	hotelSearch.classList.toggle("hotels-search-toggle");
+	hotelSearch.classList.remove("form-error");
+});
 // Появление и скрытие формы - конец.
 
 //Валидация формы - начало.
@@ -94,13 +93,10 @@ if (childMinus) {
 // Плюс и минус дети - конец.
 
 // Отправка формы на странице каталога - начало.
-var preferenseSubmit = document.querySelector(".hotel-price-button");
-var preferenseForm = document.querySelector(".preferense-filters");
-	
-if (preferenseSubmit) {
-	preferenseSubmit.addEventListener("click", function (evt) {
-		evt.preventDefault();
-		preferenseForm.submit();
-	});
-}
+var preferenseSubmit = document.querySelector(".search-form-button");
+var preferenseForm = document.querySelector(".hotels-search-button");
+
+preferenseSubmit.addEventListener("click", function (evt) {
+	evt.preventDefault();
+});
 // Отправка формы на странице каталога - конец.
