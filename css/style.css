@@ -118,7 +118,7 @@ a.site-navigation-current {
 	background-color: #82b4d3;
 }
 
-.preferense-filters {
+.preference-filters {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -128,7 +128,7 @@ a.site-navigation-current {
 	padding: 27px 72px 30px 72px;
 }
 
-.preferense-filters ul {
+.preference-filters ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -138,31 +138,31 @@ a.site-navigation-current {
  * Стили для чекбоксов - начало.
  */
 
-.preferense-filters-col1 h3,
-.preferense-filters-col2 h3 {
+.preference-filters-col1 h3,
+.preference-filters-col2 h3 {
 	margin: 0;
 	padding-bottom: 26px;
 }
 
-.preferense-filters-col2 {
+.preference-filters-col2 {
 	padding-left: 115px;
 }
 
-.preferense-list li{
+.preference-list li{
 	margin-left:  40px;
 	padding-bottom: 25px;
 }
 
-.preferense-list li:last-child {
+.preference-list li:last-child {
 	padding-bottom: 0;
 }
 
-.preferense-list-label {
+.preference-list-label {
 	position: relative;
 	cursor: pointer;
 }
 
-.preferense-list-label input[type="checkbox"] + .checkbox-indicator {
+.preference-list-label input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
 	top: -9px;
 	left: -43px;
@@ -173,7 +173,7 @@ a.site-navigation-current {
 	background-position: center center;
 }
 
-.preferense-list-label input[type="checkbox"]:checked+.checkbox-indicator {
+.preference-list-label input[type="checkbox"]:checked+.checkbox-indicator {
 	position: absolute;
 	top: -9px;
 	left: -41px;
@@ -183,11 +183,11 @@ a.site-navigation-current {
 	background-repeat: no-repeat;
 }
 
-.preferense-list-label input[type="checkbox"]:disabled+.checkbox-indicator {
+.preference-list-label input[type="checkbox"]:disabled+.checkbox-indicator {
 	opacity: 0.3;
 }
 
-.preferense-list-label input[type="checkbox"]:focus+.checkbox-indicator {
+.preference-list-label input[type="checkbox"]:focus+.checkbox-indicator {
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
 }
