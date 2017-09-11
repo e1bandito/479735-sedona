@@ -562,23 +562,24 @@ a.site-navigation-current {
 
 .calendar-button {
 	position: absolute;
-	top: 8px;
-	right: 9px;
+	top: 7px;
+	right: 3px;
 	background-color: transparent;
+	font-size: 0px;
 	border: none;
 	cursor: pointer;
 	z-index: 1;
 }
 
-.calendar path {
+.calendar-button path {
 	fill: #cbcbcb;
 }
 
-.calendar:hover path {
+.calendar-button:hover path {
 	fill: #000000;
 }
 
-.calendar:active path {
+.calendar-button:active path {
 	fill: #82b4d3;
 }
 
