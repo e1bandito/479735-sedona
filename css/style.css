@@ -1082,6 +1082,7 @@ p.result-list-rating {
 }
 
 .map {
+	background-color: #ccdeaa;
 	background-image: url(../img/map.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
